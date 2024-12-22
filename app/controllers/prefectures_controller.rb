@@ -1,6 +1,7 @@
 class PrefecturesController < ApplicationController
   def quiz
-    @prefecture = Prefecture.order("RANDOM()").first
+    @prefecture = Prefecture.order("RANDOM()").limit(1)
+    # データベースからランダムに都道府県を選ぶ
   end
 
   def check
