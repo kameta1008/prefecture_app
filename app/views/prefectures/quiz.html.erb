@@ -1,5 +1,5 @@
 <h1>Which prefecture is this?</h1>
-<img src="<%= asset_path(@prefecture.image) %>" alt="<%= @prefecture.name %>">
+<%# <img src="<%= asset_path(@prefecture.image) %>" alt="<%= @prefecture.name %>"> %>
 
 <form action="/check" method="post">
   <%= hidden_field_tag :prefecture_id, @prefecture.id %>
