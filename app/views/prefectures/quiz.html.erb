@@ -1,8 +1,8 @@
-<h1>Which prefecture is this?</h1>
+<h1>これはどこの都道府県ですか？</h1>
 <%# <img src="<%= asset_path(@prefecture.image) %>" alt="<%= @prefecture.name %>"> %>
 
 <form action="/check" method="post">
-  <%= hidden_field_tag :prefecture_id, @prefecture.id %>
-  <input type="text" name="answer" placeholder="Enter prefecture name">
-  <button type="submit">Submit</button>
+  <%# <%= hidden_field_tag :prefecture_id, @prefecture.id %> %>
+  <input type="text" name="answer" placeholder="都道府県名を入力してください">
+  <button type="submit">回答する</button>
 </form>
