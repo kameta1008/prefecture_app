@@ -2,7 +2,7 @@
 <%# <img src="<%= asset_path(@prefecture.image) %>" alt="<%= @prefecture.name %>"> %>
 
 <form action="/check" method="post">
-  <%# <%= hidden_field_tag :prefecture_id, @prefecture.id %> %>
+  <%= hidden_field_tag :prefecture_id, @prefecture.id %>
   <input type="text" name="answer" placeholder="都道府県名を入力してください">
   <button type="submit">回答する</button>
 </form>
